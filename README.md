@@ -16,4 +16,4 @@ It works in two modes:
 
 ### Schematic
 
-![seq_schema](Kicad/seq_v003f4/seq_schema.jpg)
+![seq_schema](KiCad/seq_v003f4/seq_schema.jpg)
