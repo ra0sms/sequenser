@@ -110,7 +110,6 @@ void bias_mode(){
     vu8 flag_on = 0;
     while (!GPIO_ReadInputDataBit(PTT_IN_Port, PTT_IN)){
         flag_on = 1;
-        Delay_Ms(delay_ms);
         GPIO_WriteBit(OUT_1_Port, OUT_1, Bit_SET);
         Delay_Ms(delay_ms);
         GPIO_WriteBit(OUT_2_Port, OUT_2, Bit_SET);
