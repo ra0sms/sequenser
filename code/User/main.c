@@ -56,8 +56,8 @@ void Timer2_INIT(u16 arr, u16 psc)
 void GPIO_INIT(void)
 {
     GPIO_InitTypeDef GPIO_InitStructure = {0};
-    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOD, ENABLE);
     RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOC, ENABLE);
+    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOD, ENABLE);
 
     GPIO_InitStructure.GPIO_Pin = LED_Pin;
     GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;
@@ -88,6 +88,7 @@ void GPIO_INIT(void)
     GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IPU;
     GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
     GPIO_Init(PTT_IN_Port, &GPIO_InitStructure);
+    GPIO_WriteBit(PTT_IN_Port, PTT_IN, Bit_SET);
 
     GPIO_InitStructure.GPIO_Pin = MODE;
     GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IPU;
@@ -98,6 +99,8 @@ void GPIO_INIT(void)
     GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IPU;
     GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
     GPIO_Init(DELAY_Port, &GPIO_InitStructure);
+
+    Delay_Ms(100);
 
     GPIO_WriteBit(OUT_1_Port, OUT_1, Bit_RESET);
     GPIO_WriteBit(OUT_2_Port, OUT_2, Bit_RESET);
@@ -171,5 +174,6 @@ int main(void)
             GPIO_WriteBit(OUT_PLUS_Port, OUT_PLUS, Bit_SET);
             LNA_mode();
         }
+
     }
 }

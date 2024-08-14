@@ -21,7 +21,7 @@ static uint16_t p_ms = 0;
 /*********************************************************************
  * @fn      Delay_Init
  *
- * @brief   Initializes Delay Funcation.
+ * @brief   Initializes Delay Function.
  *
  * @return  none
  */

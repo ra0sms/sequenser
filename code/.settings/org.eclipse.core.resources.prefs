@@ -1,5 +1,6 @@
 eclipse.preferences.version=1
 encoding//Core/core_riscv.h=GBK
+encoding//Debug/debug.c=GBK
 encoding//Peripheral/inc/ch32v00x.h=GBK
 encoding//Peripheral/inc/ch32v00x_gpio.h=GBK
 encoding//User/ch32v00x_conf.h=GBK
