@@ -13,6 +13,11 @@ It works in two modes:
 
 
 --------------------------------------------------------------
+PCB dimension: 70*45mm
+
+Consumption current: 30mA
+
+Switch current: up to 1A
 
 ![1](pics/1.jpg)
 
