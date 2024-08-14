@@ -1,5 +1,7 @@
 # Sequencer
 
+More information - https://ra0sms.com/sequencer-2/
+
 It works in two modes:
 
 1. PA BIAS mode (`MODE` jumper is opened)
