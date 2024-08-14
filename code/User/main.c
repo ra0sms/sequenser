@@ -163,7 +163,13 @@ int main(void)
     {
         if (GPIO_ReadInputDataBit(DELAY_Port, DELAY)) delay_ms = MIN_DELAY;
         else delay_ms = MAX_DELAY;
-        if (GPIO_ReadInputDataBit(MODE_Port, MODE)) bias_mode();
-        else LNA_mode();
+        if (GPIO_ReadInputDataBit(MODE_Port, MODE)) {
+            GPIO_WriteBit(OUT_PLUS_Port, OUT_PLUS, Bit_RESET);
+            bias_mode();
+        }
+        else {
+            GPIO_WriteBit(OUT_PLUS_Port, OUT_PLUS, Bit_SET);
+            LNA_mode();
+        }
     }
 }

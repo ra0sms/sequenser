@@ -14,6 +14,10 @@ It works in two modes:
 
 --------------------------------------------------------------
 
+![1](pics/1.jpg)
+
+
+
 ### Schematic
 
 ![seq_schema](KiCad/seq_v003f4/seq_schema.jpg)
