@@ -100,7 +100,7 @@ void GPIO_INIT(void)
     GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
     GPIO_Init(DELAY_Port, &GPIO_InitStructure);
 
-    Delay_Ms(100);
+    Delay_Ms(200);
 
     GPIO_WriteBit(OUT_1_Port, OUT_1, Bit_RESET);
     GPIO_WriteBit(OUT_2_Port, OUT_2, Bit_RESET);

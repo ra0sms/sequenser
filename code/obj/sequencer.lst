@@ -455,7 +455,7 @@ Disassembly of section .text:
  29c:	c63e                	sw	a5,12(sp)
  29e:	c426                	sw	s1,8(sp)
  2a0:	26e9                	jal	66a <GPIO_Init>
- 2a2:	06400513          	li	a0,100
+ 2a2:	0c800513          	li	a0,200
  2a6:	2bd1                	jal	87a <Delay_Ms>
  2a8:	40040513          	addi	a0,s0,1024
  2ac:	4601                	li	a2,0
